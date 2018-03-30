@@ -1,11 +1,15 @@
 package com.company;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
-
-
-        for (int i = 1; i <= 2737; i++) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter your number");
+        int number = scan.nextInt();
+        scan.nextLine();
+                for (int i = 1; i <= number; i++) {
             if (i % 7 == 0 && i % 17 == 0 && i % 23 == 0) {
                 System.out.println("is a multiple of seven, seventeen and Twenty three");
             }
